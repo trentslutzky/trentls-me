@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Box, Avatar, Image, Heading, Button, Paragraph } from "grommet";
 
-import { Instagram, Linkedin, Github, Archlinux } from "grommet-icons";
+import { Mail, Instagram, Linkedin, Github, Archlinux } from "grommet-icons";
 
 import { TopoBox } from "./CssBackgroundBoxes/TopoBox";
 import { TextureBox } from "./CssBackgroundBoxes/TextureBox";
@@ -11,11 +11,10 @@ import trent_img from "./Images/trent.jpg";
 
 export function About(props) {
   return (
-    <TopoBox
+    <MainBox
       direction="column"
       align="center"
       width="100%"
-      height="100vh"
       pad={{ vertical: "xlarge" }}
     >
       <CenterBox direction="row">
@@ -39,13 +38,19 @@ export function About(props) {
             <Button icon={<Linkedin />} />
             <Button icon={<Github />} />
             <Button icon={<Archlinux />} />
+            <Button icon={<Mail />} />
           </Box>
           <Paragraph size="large">Explore my portfolio below!</Paragraph>
         </Box>
       </CenterBox>
-    </TopoBox>
+    </MainBox>
   );
 }
+
+const MainBox = styled(TopoBox)`
+  height:100vh;
+  min-height:800px;
+`;
 
 const MeImage = styled(Image)`
   border-radius: 10px;
