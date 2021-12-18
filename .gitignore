@@ -1,5 +1,9 @@
 dist
 
+.parcel-cache/
+.prettierignore
+.prettierrc.json
+
 # Logs
 logs
 *.log
