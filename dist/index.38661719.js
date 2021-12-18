@@ -22771,9 +22771,9 @@ const AppBar = (props)=>/*#__PURE__*/ _jsxRuntime.jsx(StickyBar, {
 ;
 _c = AppBar;
 const StickyBar = _styledComponentsDefault.default(_grommet.Box)`
-  position:fixed;
-  z-index:20;
-  width:100%;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
 `;
 _c1 = StickyBar;
 function App() {
@@ -22791,7 +22791,7 @@ function App() {
                 setNavSate(props.num);
                 _reactScrollToComponentDefault.default(props.refSection.current, {
                     offset: -70,
-                    align: 'top',
+                    align: "top",
                     duration: 800
                 });
             },
@@ -22917,7 +22917,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsx(TopBarGap, {
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 82,
+                            lineNumber: 80,
                             columnNumber: 9
                         },
                         __self: this
@@ -22926,7 +22926,7 @@ function App() {
                         ref: AboutSection,
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 83,
+                            lineNumber: 81,
                             columnNumber: 9
                         },
                         __self: this
@@ -22934,7 +22934,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsx(_about.About, {
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 84,
+                            lineNumber: 82,
                             columnNumber: 9
                         },
                         __self: this
@@ -22943,7 +22943,7 @@ function App() {
                         ref: ProjectSection,
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 85,
+                            lineNumber: 83,
                             columnNumber: 9
                         },
                         __self: this
@@ -22951,7 +22951,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsx(_projects.Projects, {
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 86,
+                            lineNumber: 84,
                             columnNumber: 9
                         },
                         __self: this
@@ -22960,7 +22960,7 @@ function App() {
                         ref: ResumeSection,
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 87,
+                            lineNumber: 85,
                             columnNumber: 9
                         },
                         __self: this
@@ -22969,7 +22969,7 @@ function App() {
                         ref: ContactSection,
                         __source: {
                             fileName: "src/App.js",
-                            lineNumber: 88,
+                            lineNumber: 86,
                             columnNumber: 9
                         },
                         __self: this
@@ -22982,11 +22982,11 @@ function App() {
 _s(App, "7XNdHoB4UEhpVl4Kly9cvu60ruI=");
 _c2 = App;
 const LongGrommet = _styledComponentsDefault.default(_grommet.Grommet)`
-  height:50000px;
+  height: 50000px;
 `;
 _c3 = LongGrommet;
 const TopBarGap = _styledComponentsDefault.default(_grommet.Box)`
-  height:70px;
+  height: 70px;
 `;
 _c4 = TopBarGap;
 var _c, _c1, _c2, _c3, _c4;
