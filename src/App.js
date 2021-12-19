@@ -13,8 +13,11 @@ import { deepMerge } from "grommet/utils";
 const theme = deepMerge(grommet, customTheme);
 
 //sections
+import { SectionHeading } from "./SectionHeading";
 import { About } from "./About";
 import { Projects } from "./Projects";
+import { Resume } from './Resume';
+import { Contact } from './Contact';
 
 const AppBar = (props) => (
   <StickyBar
@@ -35,7 +38,7 @@ const StickyBar = styled(Box)`
 
 export function App() {
   const [navState, setNavSate] = useState(0);
-  const [themeMode, setThemeMode] = useState("dark");
+  const [themeMode, setThemeMode] = useState("light");
 
   const AboutSection = useRef(null);
   const ProjectSection = useRef(null);
@@ -61,9 +64,16 @@ export function App() {
   return (
     <LongGrommet theme={theme} themeMode={themeMode}>
       <AppBar>
-        <Heading level="2" margin="none">
+        <HeadingButton level="2" margin="none" onClick={()=>{
+        setNavSate(0);
+        scrollToComponent(AboutSection.current, {
+          offset: -70,
+          align: "top",
+          duration: 800,
+        });
+          }}>
           Trent Slutzky
-        </Heading>
+        </HeadingButton>
         <Box flex="grow" />
         <NavButton num={0} label="About" refSection={AboutSection} />
         <NavButton num={1} label="Projects" refSection={ProjectSection} />
@@ -81,13 +91,22 @@ export function App() {
         <section ref={AboutSection} />
         <About />
         <section ref={ProjectSection} />
-        <Projects />
+        <SectionHeading title="Projects"/>
+        <Projects/>
         <section ref={ResumeSection} />
+        <SectionHeading title="Resume"/>
+        <Resume/>
         <section ref={ContactSection} />
+        <SectionHeading title="Contact"/>
+        <Contact/>
       </Box>
     </LongGrommet>
   );
 }
+
+const HeadingButton = styled(Heading)`
+  cursor:pointer;
+`;
 
 const LongGrommet = styled(Grommet)`
   height: 50000px;
