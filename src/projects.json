@@ -1,12 +1,14 @@
 {"projects":[
   {
     "name":"NASA Robotic Mining Competition",
-    "dates":"2019-2021",
-    "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover"
+    "dates":"2019 - 2021",
+    "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover",
+    "images":["nasa_rmc_1.jpg","nasa_rmc_2.jpg"]
   },
   {
     "name":"Mini Mecanum Robot",
     "dates":"2020",
-    "desc":"A fully custom, 3D-printed mecanum wheel-based mobile robot build to experiment with computuer vision and autonomous robotics"
-  }
+    "desc":"A fully custom, 3D-printed mecanum wheel-based mobile robot build to experiment with computuer vision and autonomous robotics",
+    "images":["mecanum_2.jpg","mecanum_1.jpg"]
+  },
 ]}

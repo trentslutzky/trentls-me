@@ -5,7 +5,7 @@ import { Box, Avatar, Image, Heading, Paragraph } from "grommet";
 export function SectionHeading(props) {
   let title = props.title==null?"":props.title
   return (
-    <Container direction="column" align="center" width="100%" elevation="small">
+    <Container direction="column" align="center" width="100%">
       <HeadingBox pad={{ horizontal:"medium",vertical:"none" }}>
         <Heading level="2" margin={{vertical:"small"}}>{title}</Heading>
       </HeadingBox>
