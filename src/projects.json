@@ -4,25 +4,27 @@
     "name":"NASA RMC Lunar Rover",
     "dates":"2019 - 2021",
     "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover",
-    "images":["nama_rmc_0.jpg","nasa_rmc_1.jpg","nasa_rmc_2.jpg"]
+    "images":["nasa_rmc_0.jpg","nasa_rmc_2.jpg","nasa_rmc_1.jpg"]
   },
   {
     "id":1,
     "name":"Micro Mecanum Robot",
     "dates":"2020",
     "desc":"A fully custom, 3D-printed mecanum wheel-based mobile robot build to experiment with computuer vision and autonomous robotics",
-    "images":["mecanum_2.jpg","mecanum_1.jpg"]
+    "images":["mecanum_2.jpg","mecanum_1.jpg","mecanum_3.jpg","mecanum_4.jpg"]
   },
   {
     "id":2,
     "name":"SMA-Based Origami Endoscope",
-    "dates":"2017"
+    "dates":"2017",
+    "images":["d_core_1.JPG","d_core_2.JPG","d_core_3.JPG"]
   },
   {
     "id":3,
     "name":"Combat Robotics (Robot Battles)",
     "dates":"2016",
-    "desc":"My entry into the 30lb (featherweight) combat robotics competition 'Robot Battles'. Fully cutsom designed in CAD, fabricated from 1/4-inch 6061 aluminum"
+    "desc":"My entry into the 30lb (featherweight) combat robotics competition 'Robot Battles'. Fully cutsom designed in CAD, fabricated from 1/4-inch 6061 aluminum",
+    "images":["battlebot_1.png","battlebot_2.jpg","battlebot_3.jpg","battlebot_4.jpg","battlebot_5.jpg"]
   },
   {
     "id":4,
@@ -34,7 +36,9 @@
   },
   {
     "id":6,
-    "name":"ME___ Autonomous Robot"
+    "name":"ME___ Autonomous Robot",
+    "desc":"3D Printed Robot designed for my ME Robotics Design class. It used bumpers and light sensors to navigate a maze-like course.",
+    "images":["design_bot_1.jpg","design_bot_2.jpg","design_bot_3.jpg"]
   },
   {
     "id":7,
@@ -54,11 +58,14 @@
   },
   {
     "id":11,
-    "name":"RCServo Quadupedal Robot"
+    "name":"RCServo Quadupedal Robot",
+    "desc":"3D printed, servo driven quadrupedal robot. WIP",
+    "images":["quad_bot_1.png","quad_bot_2.png"]
   },
   {
     "id":12,
-    "name":"Brass Truss Building"
+    "name":"Brass Truss Building",
+    "images":["truss_1.jpg","truss_2.jpg","truss_3.jpg"]
   },
   {
     "id":13,
@@ -70,7 +77,9 @@
   },
   {
     "id":15,
-    "name":"Micro Mecanum Mk2"
+    "name":"Micro Mecanum Mk2",
+    "desc":"The second work-in-progress versoin of my Micro Mecanum Bot. Designd to accomadate a number of custom grippers and other attachments.",
+    "images":["mecanum_mk2_1.jpg","mecanum_mk2_2.jpg","mecanum_mk2_3.jpg"]
   },
   {
     "id":16,
@@ -78,14 +87,19 @@
   },
   {
     "id":17,
-    "name":"3D Printer Upgrades"
+    "name":"3D Printer Upgrades",
+    "images":["3D_printer_upgrade_1.jpg","3D_printer_upgrade_2.jpg","3D_printer_upgrade_3.jpg"]
   },
   {
     "id":18,
-    "name":"Custom Robot PCB"
+    "name":"Custom Robot PCB",
+    "desc":"A custom designd and manufactured PCB to simplify the wiring in my Micro Mecanum projects.",
+    "images":["custom_pcb_1.png","custom_pcb_2.png","custom_pcb_3.png"]
   },
   {
     "id":19,
-    "name":"Speaker Crossover Network"
+    "name":"Speaker Crossover Network",
+    "desc":"A speaker crossover circuit designed for my undergraduate circuits class.",
+    "images":["crossover.jpg","crossover_1.jpg"]
   },
 ]}
