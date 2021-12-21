@@ -25,7 +25,7 @@ export function Projects(props) {
       <CenterBox direction="row">
         <Box basis="2/3" pad="none">
           {currentProject.images&&
-          <CarouselBG fill controls="selectors" play={4000}>
+          <CarouselBG fill controls="arrows" play={6000}>
           {currentProject.images.map((i)=>{
             return(
               <Image key={i} src={"https://raw.githubusercontent.com/trentslutzky/trentls-me/main/src/Images/"+i}
