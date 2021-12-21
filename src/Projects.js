@@ -50,7 +50,7 @@ export function Projects(props) {
             <Box flex="grow"/>
             {currentProject.desc&&
             <PBParagraph 
-              size="large"
+              size="xlarge"
               fill 
               textAlign="center" 
               margin={{horizontal:"large",bottom:"xlarge"}}

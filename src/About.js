@@ -10,6 +10,7 @@ import { TextureBox } from "./CssBackgroundBoxes/TextureBox";
 import trent_img from "./Images/trent.jpg";
 
 export function About(props) {
+  const focusProjects = props.focusProjects
   return (
     <MainBox
       direction="column"
@@ -17,7 +18,7 @@ export function About(props) {
       width="100%"
       pad={{ vertical: "xlarge" }}
     >
-      <Box direction="row" align="center" height="80%">
+      <Box direction="row" align="center" height="80%" animation="fadeIn">
       <CenterBox direction="row">
         <Box flex="grow" direction="column" align="center">
           <Box width="450px">
@@ -35,13 +36,23 @@ export function About(props) {
             aliquip ex ea commodo consequat.
           </Paragraph>
           <Box direction="row">
-            <Button icon={<Instagram />} />
-            <Button icon={<Linkedin />} />
-            <Button icon={<Github />} />
+            <Button icon={<Instagram />} onClick={()=>{
+              window.open("https://www.instagram.com/tls_mech/","_blank");
+            }}/>
+            <Button icon={<Linkedin />} onClick={()=>{
+              window.open("https://www.linkedin.com/in/tlslutzky/","_blank");
+            }}/>
+            <Button icon={<Github />} onClick={()=>{
+              window.open("https://github.com/trentslutzky","_blank");
+            }}/>
             <Button icon={<Archlinux />} />
-            <Button icon={<Mail />} />
+            <Button icon={<Mail />} onClick={()=>{
+              window.open("mailto:trent.slutzky@gmail.com");
+            }}/>
           </Box>
-          <Paragraph size="large">Explore my portfolio below!</Paragraph>
+            <Paragraph size="large">Explore my <Button onClick={()=>{
+              focusProjects();
+            }}><u>portfolio</u></Button> below!</Paragraph>
         </Box>
       </CenterBox>
       </Box>
@@ -50,7 +61,7 @@ export function About(props) {
 }
 
 const MainBox = styled(TopoBox)`
-  height:100vh;
+  height:calc(100vh - 80px) !important;
   min-height:800px;
 `;
 

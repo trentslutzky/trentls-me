@@ -98,7 +98,7 @@ export function App() {
       <Box background={{ light: "#fff", dark: "#181b28" }}>
         <TopBarGap />
         <section ref={AboutSection} />
-        <About />
+        <About focusProjects={focusProjects}/>
         <section ref={ProjectSection} />
         <SectionHeading title="Projects" />
         <Projects focusProjects={focusProjects}/>

@@ -3,8 +3,8 @@
     "id":0,
     "name":"NASA RMC Lunar Rover",
     "dates":"2019 - 2021",
-    "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover",
-    "images":["nasa_rmc_0.jpg","nasa_rmc_2.jpg","nasa_rmc_1.jpg"]
+    "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover to collect icy-rogolith from below the surface of the moon.",
+    "images":["nasa_rmc_2.jpg","nasa_rmc_0.jpg","nasa_rmc_1.jpg"]
   },
   {
     "id":1,
@@ -17,87 +17,111 @@
     "id":2,
     "name":"SMA-Based Origami Endoscope",
     "dates":"2017",
+    "desc":"Dering my internship at the UGA Medical Robotics Laboratory, I was part of the team that designed and manufactured an endoscope that utilized a low-cost origami inspired structure (D-CORE) and shape-memory-allow wire for actuation. The endoscope was designed for operation on a patient while insite an MRI machine. Our research was published in a number of peer-reviewed scentific journals. My roles included 3D printint the D-CORE modules, building coltrol systems, and performing test to quantify the performance of the mechanism.",
     "images":["d_core_1.JPG","d_core_2.JPG","d_core_3.JPG"]
   },
   {
     "id":3,
     "name":"Combat Robotics (Robot Battles)",
     "dates":"2016",
-    "desc":"My entry into the 30lb (featherweight) combat robotics competition 'Robot Battles'. Fully cutsom designed in CAD, fabricated from 1/4-inch 6061 aluminum",
+    "desc":"My entry into the 30lb (featherweight) combat robotics competition 'Robot Battles'. Fully cutsom designed in CAD, fabricated from 1/4-inch 6061 aluminum. I participated in a competition with many well-known bot builders in the BattleBots telivision series.",
     "images":["battlebot_1.png","battlebot_2.jpg","battlebot_3.jpg","battlebot_4.jpg","battlebot_5.jpg"]
   },
   {
     "id":4,
-    "name":"DIY Electric Skateboard"
+    "name":"DIY Electric Skateboard",
+    "dates":"2016 - 2020",
+    "desc":"My custom-built electric motor propelled longboard. The current iteration consists of a 12-cell lithium battery array and a large brushless DC motor, allowing for over 15 miles of range, and top speeds of near 25 miles-per-hour.",
+    "images":["longboard_1.jpg","longboard_2.jpg"]
   },
   {
     "id":5,
-    "name":"FIRST Tech Challenge Robotics Team"
+    "name":"FIRST Tech Challenge Robotics Team",
+    "dates":"2014-2017",
+    "desc":"I was president of my highschool's FIRST tech challenge robotics team. While I was on the team, we placed first in the state and made it to the national competition twice. I consider this pivotal in growing my passion toward mechanical engineerint, programming and robotics, and sparked a life-long interest. "
   },
   {
     "id":6,
-    "name":"ME___ Autonomous Robot",
+    "name":"Light-Sensing Autonomous Robot",
+    "dates":"2017",
     "desc":"3D Printed Robot designed for my ME Robotics Design class. It used bumpers and light sensors to navigate a maze-like course.",
     "images":["design_bot_1.jpg","design_bot_2.jpg","design_bot_3.jpg"]
   },
   {
     "id":7,
-    "name":"Mecanum Ping-pong practice Robot"
+    "name":"Mecanum Ping-pong practice Robot",
+    "dates":"2020",
+    "desc":"An assignment for my undergraduate design class was to design an intelligent ping-pong practice machine. While most of my peers designed simple ball launchers, I used my knowledge of mobile robots to design a self-contained, app-controlled intelligent ping pong robot."
   },
   {
     "id":8,
-    "name":"ME598 Intro to Robotics Final"
+    "dates":"2021",
+    "name":"ME598 Intro to Robotics Final",
+    "desc":"My graduate-level Intro. to Robotics course, MATLAB control system for a moblile robot to autonomously sort colored pucks into colored squares."
   },
   {
     "id":9,
-    "name":"Arduino Weather Station"
+    "name":"Arduino Weather Station",
+    "dates":"2018",
+    "desc":"A custom desined, arduino controlled wifi-connected weather station capable of measuring wind speed, temperature, pressure and humidity, logging that data and serving that data over a webserver for datacollection from the devide while operating in the field."
   },
   {
     "id":10,
-    "name":"FlagQuest"
+    "name":"FlagQuest",
+    "desc":"A webapp created to help myself (and others) learn the country flags of the world. Written in ReactJS.",
+    "dates":"2021"
   },
   {
     "id":11,
     "name":"RCServo Quadupedal Robot",
+    "dates":"2019",
     "desc":"3D printed, servo driven quadrupedal robot. WIP",
     "images":["quad_bot_1.png","quad_bot_2.png"]
   },
   {
     "id":12,
     "name":"Brass Truss Building",
+    "dates":"2019",
     "images":["truss_1.jpg","truss_2.jpg","truss_3.jpg"]
   },
   {
     "id":13,
+    "dates":"2020",
     "name":"Parallel Contant-force gripper"
   },
   {
     "id":14,
+    "dates":"2020",
     "name":"Rack-and-Pinion Gripper"
   },
   {
     "id":15,
     "name":"Micro Mecanum Mk2",
+    "dates":"2020",
     "desc":"The second work-in-progress versoin of my Micro Mecanum Bot. Designd to accomadate a number of custom grippers and other attachments.",
     "images":["mecanum_mk2_1.jpg","mecanum_mk2_2.jpg","mecanum_mk2_3.jpg"]
   },
   {
     "id":16,
+    "dates":"2020",
     "name":"Robot Arm Inverse Kinematics"
   },
   {
     "id":17,
+    "dates":"2020",
     "name":"3D Printer Upgrades",
     "images":["3D_printer_upgrade_1.jpg","3D_printer_upgrade_2.jpg","3D_printer_upgrade_3.jpg"]
   },
   {
     "id":18,
+    "dates":"2020",
     "name":"Custom Robot PCB",
     "desc":"A custom designd and manufactured PCB to simplify the wiring in my Micro Mecanum projects.",
     "images":["custom_pcb_1.png","custom_pcb_2.png","custom_pcb_3.png"]
   },
   {
     "id":19,
+    "dates":"2019",
     "name":"Speaker Crossover Network",
     "desc":"A speaker crossover circuit designed for my undergraduate circuits class.",
     "images":["crossover.jpg","crossover_1.jpg"]
