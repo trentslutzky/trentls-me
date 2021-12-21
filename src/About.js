@@ -30,10 +30,9 @@ export function About(props) {
             Hello! My name is Trent Slutzky.
           </Heading>
           <Paragraph size="large">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+              Mechanical Engineering graduate with a passion for robotics, and design, specifically in the application of mobile robotics and space robotics, but am passionate about many areas.
+
+Actively seeking jobs in the field of mechanical engineering and hoping to work on projects that are interesting, innovative, impactful or all three!
           </Paragraph>
           <Box direction="row">
             <Button icon={<Instagram />} onClick={()=>{
