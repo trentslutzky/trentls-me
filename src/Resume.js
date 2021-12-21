@@ -14,7 +14,9 @@ export function Resume(props) {
       pad={{ vertical: "xlarge" }}
     >
       <CenterBox direction="column" align="center">
-          <Box>
+          <Box onClick={()=>{
+              window.open("https://raw.githubusercontent.com/trentslutzky/trentls-me/main/src/trent_slutzky_resume.pdf","_blank")
+              }} focusIndicator={false}>
               <Image fit="contain" src={resume}/>
           </Box>
       </CenterBox>

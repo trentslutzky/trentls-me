@@ -113,7 +113,6 @@ const HeadingButton = styled(Heading)`
 `;
 
 const LongGrommet = styled(Grommet)`
-  height: 50000px;
 `;
 
 const TopBarGap = styled(Box)`
