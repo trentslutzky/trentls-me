@@ -43,7 +43,6 @@ export function App() {
   const AboutSection = useRef(null);
   const ProjectSection = useRef(null);
   const ResumeSection = useRef(null);
-  const ContactSection = useRef(null);
 
   function focusProjects(){
     setNavState(1);
@@ -87,7 +86,6 @@ export function App() {
         <NavButton num={0} label="About" refSection={AboutSection} />
         <NavButton num={1} label="Projects" refSection={ProjectSection} />
         <NavButton num={2} label="Resume" refSection={ResumeSection} />
-        <NavButton num={3} label="Contact" refSection={ContactSection} />
         <Button
           icon={themeMode == "light" ? <Sun /> : <Moon />}
           onClick={() => {
@@ -105,9 +103,6 @@ export function App() {
         <section ref={ResumeSection} />
         <SectionHeading title="Resume"/>
         <Resume/>
-        <section ref={ContactSection} />
-        <SectionHeading title="Contact"/>
-        <Contact/>
       </Box>
     </LongGrommet>
   );
