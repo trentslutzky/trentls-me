@@ -17,6 +17,7 @@ export function About(props) {
       width="100%"
       pad={{ vertical: "xlarge" }}
     >
+      <Box direction="row" align="center" height="80%">
       <CenterBox direction="row">
         <Box flex="grow" direction="column" align="center">
           <Box width="450px">
@@ -43,6 +44,7 @@ export function About(props) {
           <Paragraph size="large">Explore my portfolio below!</Paragraph>
         </Box>
       </CenterBox>
+      </Box>
     </MainBox>
   );
 }

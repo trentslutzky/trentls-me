@@ -37,20 +37,29 @@ const StickyBar = styled(Box)`
 `;
 
 export function App() {
-  const [navState, setNavSate] = useState(0);
-  const [themeMode, setThemeMode] = useState("light");
+  const [navState, setNavState] = useState(0);
+  const [themeMode, setThemeMode] = useState("dark");
 
   const AboutSection = useRef(null);
   const ProjectSection = useRef(null);
   const ResumeSection = useRef(null);
   const ContactSection = useRef(null);
 
+  function focusProjects(){
+    setNavState(1);
+    scrollToComponent(ProjectSection.current, {
+      offset: -70,
+      align: "top",
+      duration: 800,
+    });
+  }
+
   const NavButton = (props) => (
     <Button
       {...props}
       primary={navState == props.num}
       onClick={() => {
-        setNavSate(props.num);
+        setNavState(props.num);
         scrollToComponent(props.refSection.current, {
           offset: -70,
           align: "top",
@@ -65,7 +74,7 @@ export function App() {
     <LongGrommet theme={theme} themeMode={themeMode}>
       <AppBar>
         <HeadingButton level="2" margin="none" onClick={()=>{
-        setNavSate(0);
+        setNavState(0);
         scrollToComponent(AboutSection.current, {
           offset: -70,
           align: "top",
@@ -91,8 +100,8 @@ export function App() {
         <section ref={AboutSection} />
         <About />
         <section ref={ProjectSection} />
-        <SectionHeading title="Projects"/>
-        <Projects/>
+        <SectionHeading title="Projects" />
+        <Projects focusProjects={focusProjects}/>
         <section ref={ResumeSection} />
         <SectionHeading title="Resume"/>
         <Resume/>

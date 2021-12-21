@@ -14,4 +14,9 @@ export const customTheme = {
       radius: "0px",
     },
   },
+  carousel: {
+    animation: {
+      duration: 500,
+    },
+  },
 };

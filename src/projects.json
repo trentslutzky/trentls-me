@@ -1,14 +1,91 @@
 {"projects":[
   {
-    "name":"NASA Robotic Mining Competition",
+    "id":0,
+    "name":"NASA RMC Lunar Rover",
     "dates":"2019 - 2021",
     "desc":"Team lead and excavation subsystem engineer for the Stevens NASA Robotic Mining Competition team, wherein we competed with 50 other university teams to design and build a lunar rover",
-    "images":["nasa_rmc_1.jpg","nasa_rmc_2.jpg"]
+    "images":["nama_rmc_0.jpg","nasa_rmc_1.jpg","nasa_rmc_2.jpg"]
   },
   {
-    "name":"Mini Mecanum Robot",
+    "id":1,
+    "name":"Micro Mecanum Robot",
     "dates":"2020",
     "desc":"A fully custom, 3D-printed mecanum wheel-based mobile robot build to experiment with computuer vision and autonomous robotics",
     "images":["mecanum_2.jpg","mecanum_1.jpg"]
+  },
+  {
+    "id":2,
+    "name":"SMA-Based Origami Endoscope",
+    "dates":"2017"
+  },
+  {
+    "id":3,
+    "name":"Combat Robotics (Robot Battles)",
+    "dates":"2016",
+    "desc":"My entry into the 30lb (featherweight) combat robotics competition 'Robot Battles'. Fully cutsom designed in CAD, fabricated from 1/4-inch 6061 aluminum"
+  },
+  {
+    "id":4,
+    "name":"DIY Electric Skateboard"
+  },
+  {
+    "id":5,
+    "name":"FIRST Tech Challenge Robotics Team"
+  },
+  {
+    "id":6,
+    "name":"ME___ Autonomous Robot"
+  },
+  {
+    "id":7,
+    "name":"Mecanum Ping-pong practice Robot"
+  },
+  {
+    "id":8,
+    "name":"ME598 Intro to Robotics Final"
+  },
+  {
+    "id":9,
+    "name":"Arduino Weather Station"
+  },
+  {
+    "id":10,
+    "name":"FlagQuest"
+  },
+  {
+    "id":11,
+    "name":"RCServo Quadupedal Robot"
+  },
+  {
+    "id":12,
+    "name":"Brass Truss Building"
+  },
+  {
+    "id":13,
+    "name":"Parallel Contant-force gripper"
+  },
+  {
+    "id":14,
+    "name":"Rack-and-Pinion Gripper"
+  },
+  {
+    "id":15,
+    "name":"Micro Mecanum Mk2"
+  },
+  {
+    "id":16,
+    "name":"Robot Arm Inverse Kinematics"
+  },
+  {
+    "id":17,
+    "name":"3D Printer Upgrades"
+  },
+  {
+    "id":18,
+    "name":"Custom Robot PCB"
+  },
+  {
+    "id":19,
+    "name":"Speaker Crossover Network"
   },
 ]}

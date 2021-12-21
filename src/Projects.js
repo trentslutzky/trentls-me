@@ -13,7 +13,8 @@ import projects_data from './projects.json';
 
 export function Projects(props) {
 
-  const [currentProject, setCurrentProject] = useState(projects_data.projects[0])
+  const focusProjects = props.focusProjects;
+  const [currentProject, setCurrentProject] = useState(projects_data.projects[0]);
 
   return (
     <MainBox
@@ -23,34 +24,40 @@ export function Projects(props) {
     >
       <CenterBox direction="row">
         <Box basis="2/3" pad="none">
-          <CarouselBG fill controls="selectors" play={10000}>
+          {currentProject.images&&
+          <CarouselBG fill controls="selectors" play={4000}>
           {currentProject.images.map((i)=>{
             return(
-              <Image src={"https://raw.githubusercontent.com/trentslutzky/trentls-me/main/src/Images/"+i}
-              fill={true}
-              fit="cover"
+              <Image key={i} src={"https://raw.githubusercontent.com/trentslutzky/trentls-me/main/src/Images/"+i}
+                fit="cover"
               />
             )
           })}
           </CarouselBG>
-          <ProjectBox background="#00000096">
-            <Heading 
+          }
+          <ProjectBox 
+              border={{horizontal:"xsmall",right:"xsmall"}}
+              direction="column"
+              align="center"
+          >
+            <PBHeading 
               size="medium" 
-              fill 
               textAlign="center"
               margin={{top:"large"}}
             >
               {currentProject.name}
-            </Heading>
+            </PBHeading>
             <Box flex="grow"/>
-            <Paragraph 
+            {currentProject.desc&&
+            <PBParagraph 
               size="large"
               fill 
               textAlign="center" 
               margin={{horizontal:"large",bottom:"xlarge"}}
             >
-              {currentProject.desc}
-            </Paragraph>
+             {currentProject.desc}
+            </PBParagraph>
+            }
           </ProjectBox>
         </Box>
         <ProjectList basis="1/3"
@@ -62,21 +69,31 @@ export function Projects(props) {
               <ProjectListItem 
                 overflow="visible"
                 pad="small" 
-                key={p.name}
-                border="bottom"
-                hoverIndicator={true}
+                key={p.id}
+                border={
+                    p.id==currentProject.id
+                    ?[
+                      {size:"30px",side:"left",color:"#6977ac"},
+                      {size:"xsmall",side:"bottom"}
+                    ]
+                    :"bottom"
+                }
+                hoverIndicator={{background:{light:"light-1",dark:"dark-1",}}}
                 focusIndicator={false}
                 onClick={()=>{
+                  focusProjects();
                   setCurrentProject(p);
                 }}
               >
                 <Heading 
+                  truncate={true}
                   size="small" 
                   margin={{vertical:"small"}}
                   level="3"
                 >
                   {p.name}
                 </Heading>
+                {p.desc&&
                 <Paragraph 
                   fill
                   size="small"
@@ -84,6 +101,8 @@ export function Projects(props) {
                 >
                   {(p.desc.length > 100) ? p.desc.substr(0, 100-1) + '...' : p.desc}
                 </Paragraph>
+                }
+                {p.dates&&
                 <Paragraph 
                   fill
                   size="small"
@@ -92,6 +111,7 @@ export function Projects(props) {
                 >
                   {p.dates}
                 </Paragraph>
+                }
               </ProjectListItem>
             )
           })}
@@ -110,14 +130,17 @@ const CarouselBG = styled(Carousel)`
 
 const CenterBox = styled(Box)`
   width: 100%;
-  height: 87vh;
+  height:calc(100vh - 135px) !important;
 `;
 
 const ProjectBox = styled(Box)`
   position:absolute;
-  height:87%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6491596638655462) 2%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 100%);
+  height:calc(100vh - 135px) !important;
   width:66.6666%;
   pointer-events:none;
+  color:white;
 `;
 
 const ProjectList = styled(Box)`
@@ -127,4 +150,15 @@ const ProjectList = styled(Box)`
 
 const ProjectListItem = styled(Box)`
   min-height:unset;
+  transition:all 0.25s;
+`;
+
+const PBParagraph = styled(Paragraph)`
+  background:#000000a6;
+  padding:10px;
+`;
+
+const PBHeading = styled(Heading)`
+  background:#000000cc;
+  padding:10px 30px 10px 30px;
 `;
