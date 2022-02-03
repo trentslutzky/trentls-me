@@ -17,7 +17,7 @@
     "id":2,
     "name":"SMA-Based Origami Endoscope",
     "dates":"2017",
-    "desc":"During my internship at the UGA Medical Robotics Laboratory, I was part of the team that designed and manufactured an endoscope that utilized a low-cost origami inspired structure (D-CORE) and shape-memory-allow wire for actuation. The endoscope was designed for operation on a patient while insite an MRI machine. Our research was published in a number of peer-reviewed scentific journals. My roles included 3D printint the D-CORE modules, building coltrol systems, and performing test to quantify the performance of the mechanism.",
+    "desc":"During my internship at the UGA Medical Robotics Laboratory, I was part of the team that designed and manufactured an endoscope that utilized a low-cost origami inspired structure (D-CORE) and shape-memory-allow wire for actuation. The endoscope was designed for operation on a patient while inside an MRI machine. Our research was published in a number of peer-reviewed scentific journals. My roles included CAD Design & 3D printing of the D-CORE modules, building coltrol systems, and performing tests to quantify the performance of the mechanisms that we were prototyping.",
     "images":["d_core_1.JPG","d_core_2.JPG","d_core_3.JPG"]
   },
   {
